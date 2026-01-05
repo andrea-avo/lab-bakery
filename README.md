@@ -21,3 +21,5 @@ You can run this project locally with the following steps:
 
 1. Download or clone the repository
 2. Open the `index.html` file in your browser.
+
+##The website was developed in 2025.##
