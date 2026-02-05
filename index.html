@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
@@ -15,147 +15,13 @@
       rel="stylesheet"
       type="text/css"
     />
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-      h1,
-      h2,
-      h3 {
-        font-family: "Playfair Display", serif;
-      }
-
-      /* Scroll Reveal Animations */
-      .reveal {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.8s ease;
-      }
-      .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      /* Animasi anak elemen biar muncul satu-satu */
-      .reveal > * {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.6s ease;
-      }
-      .reveal.active > * {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .reveal.active > *:nth-child(1) {
-        transition-delay: 0.2s;
-      }
-      .reveal.active > *:nth-child(2) {
-        transition-delay: 0.4s;
-      }
-      .reveal.active > *:nth-child(3) {
-        transition-delay: 0.6s;
-      }
-      .reveal.active > *:nth-child(4) {
-        transition-delay: 0.8s;
-      }
-
-      /* Hover efek menu */
-      .menu-img {
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
-      }
-      .menu-img:hover {
-        transform: scale(1.1);
-        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-         transform: scale(0.9);   /* shrink the entire card */
-}
-
-      /* Contact Section */
-     /* Gradient background for the WHOLE section */
-#contact-section {
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(180deg, #FFE4E6, #FFCCD3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-}
-
-   #contact {
-  max-width: 800px;  
-  margin: 40px auto;  /* center horizontally */
-  padding: 20px;
-  background: #FFE4E6;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-  }
-
-  #contact h2 {
-  text-align: center;
-  margin-bottom:10px;
-  color: #c2185b;
-  font-size: 28px;   /* make title bigger */
-  font-weight: bold; /* bolder title */
-}
-
-#contact .contact-subtitle {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: #c2185b;
-  font-style: italic;
-}
-
-  #contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;  /* spacing between fields */
-  }
-
-  #contact label {
-  font-weight: bold;
-  }
-
-  #contact input,
-#contact textarea {
-  width: 100%;
-  padding: 10px;       /* reduce padding */
-  margin-bottom: 0px; /* less spacing between fields */
-  border: 1px solid #ffa9ca;
-  border-radius: 6px;
-  font-size: 15px;     /* slightly smaller text */
-  box-sizing: border-box;
-}
-
-  #contact textarea {
-  resize: vertical; /* only allow vertical resize */
-  }
-
-  #contact button {
-  background: #c2185b;
-  color: rgb(255, 238, 155);
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background 0.3s ease;
-  }
-
-  #contact button:hover {
-  background: #a31548;
-  }
-
-
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-rose-50 text-neutral-800">
-    <!-- Navbar -->
     <header>
       <div class="navbar bg-rose-100 shadow px-6">
         <div class="navbar-start">
@@ -181,7 +47,6 @@
     </header>
 
     <main>
-      <!-- Hero -->
       <section class="relative reveal">
         <img
           src="asset/hero.jpeg"
@@ -201,7 +66,6 @@
         </div>
       </section>
 
-      <!-- History -->
       <section class="px-8 py-20 bg-rose-50 reveal" id="history">
         <h2 class="text-4xl font-bold text-center text-rose-700 mb-12">
           Our History
@@ -224,7 +88,6 @@
         </div>
       </section>
 
-      <!-- Menu -->
       <section id="menu" class="px-8 py-20 bg-rose-100 reveal">
         <h2 class="text-4xl font-bold text-center text-rose-700 mb-14">
           Our Menu
@@ -318,32 +181,53 @@
       </section>
     </main>
 
-    <!-- Contact Us Section -->
-   <section id="contact-section">
-  <div id="contact">
-    <h2>Contact Us</h2>
-     <p class="contact-subtitle">We’d love to hear from you — fill out the form below!</p>
-     
-  <form action="https://formsubmit.co/lvit2025@gmail.com" method="POST">
-    
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://andreavirgil.github.io/lab-bakery/">
-    
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="Your Email" required><br>
+    <section id="contact-section">
+      <div id="contact">
+        <h2>Contact Us</h2>
+        <p class="contact-subtitle">
+          We’d love to hear from you — fill out the form below!
+        </p>
 
-    <label for="name">Subject:</label><br>
-    <input type="text" id="name" name="name" placeholder="Topic about ..." required><br>
+        <form action="https://formsubmit.co/lvit2025@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://andreavirgil.github.io/lab-bakery/"
+          />
 
-    <label for="message">Feedback:</label><br>
-    <textarea id="message" name="message" placeholder="How can we help?" required></textarea><br>
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          /><br />
 
-    <button type="submit">Send</button>
-       </form>
-     </div>
+          <label for="name">Subject:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Topic about ..."
+            required
+          /><br />
+
+          <label for="message">Feedback:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="How can we help?"
+            required
+          ></textarea
+          ><br />
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </section>
 
-    <!-- Footer -->
     <footer
       class="footer footer-center p-10 bg-rose-200 text-rose-800 reveal"
       id="footer"
@@ -352,7 +236,6 @@
         <h1 class="text-2xl font-bold">LAB Bakery</h1>
         <p>Copyright © 2025 LAB. All rights reserved.</p>
         <div class="flex gap-6 justify-center mt-4">
-          <!-- Telepon -->
           <a
             href="tel:+6281234567890"
             class="hover:text-rose-600"
@@ -378,7 +261,6 @@
             </svg>
           </a>
 
-          <!-- Instagram -->
           <a
             href="https://instagram.com/"
             target="_blank"
@@ -408,7 +290,6 @@
             </svg>
           </a>
 
-          <!-- Facebook -->
           <a
             href="https://facebook.com/"
             target="_blank"
@@ -434,7 +315,6 @@
             </svg>
           </a>
 
-          <!-- Email -->
           <a
             href="mailto:lab@bakery.com"
             class="hover:text-rose-600"
@@ -463,30 +343,6 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      const reveals = document.querySelectorAll(".reveal");
-
-      function revealOnScroll() {
-        for (let i = 0; i < reveals.length; i++) {
-          const windowHeight = window.innerHeight;
-          const elementTop = reveals[i].getBoundingClientRect().top;
-          const elementBottom = reveals[i].getBoundingClientRect().bottom;
-          const elementVisible = 100;
-
-          if (
-            elementTop < windowHeight - elementVisible &&
-            elementBottom > elementVisible
-          ) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-
-      window.addEventListener("scroll", revealOnScroll);
-      revealOnScroll();
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
